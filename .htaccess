@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+Options -Indexes
+
+ErrorDocument 404 /fms/404.php
+ErrorDocument 403 /fms/403.php
